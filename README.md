@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Nice Resume :page_with_curl:
 
-## Getting Started
+### [LIVE DEMO](https://nordicgiant2.github.io/react-nice-resume-page/index.html)
 
-First, run the development server:
+![img](https://github.com/nordicgiant2/react-nice-resume/blob/master/public/images/img.jpg?raw=true)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# About [`particles-bg`](https://github.com/lindelof/particles-bg) Library
+#### This project uses the react particle background component library [https://github.com/lindelof/particles-bg](https://github.com/lindelof/particles-bg). It's very simple. Anyone can be a Musketeer with it.
+
+![img](https://github.com/lindelof/particles-bg/raw/master/image/03.jpg?raw=true)
+
+# Description
+This project forks from [https://github.com/tbakerx/react-resume-template](https://github.com/tbakerx/react-resume-template), I made some modifications and adjustments, thanks to the [author](https://github.com/tbakerx).
+
+![img](https://github.com/nordicgiant2/react-nice-resume/blob/master/public/images/img2.jpg?raw=true)
+
+# Run Project
+### 1. Clone the project
+
+### 2. Run the project
+```shell
+npm i
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 3. Build
+```shell
+npm run build
+```
