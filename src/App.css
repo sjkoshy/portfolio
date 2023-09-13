@@ -1,8 +1,19 @@
+* {
+  background-color: black;
+}
 
 .App {
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 li {
   list-style-type: none;
+}
+
+i {
+  font-size: 3em;
+  color: white;
+  padding: 0.5em;
 }
