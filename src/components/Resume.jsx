@@ -1,9 +1,46 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import "./Resume.css";
 
-export default function Resume() {
+function Resume({ resume, background }) {
+  useEffect(() => {
+    const resumeSection = document.querySelector(".resume");
+    resumeSection.style.setProperty(
+      "--about",
+      `url("/img/${background?.resume}")`
+    );
+  }, [background]);
+
+  useEffect(() => {
+    window.addEventListener(
+      "scroll",
+      () => {
+        const screenPosition = window.innerHeight;
+        const resumeBtn = document
+          .querySelector(".resume__copy a")
+          .getBoundingClientRect().bottom;
+
+        if (resumeBtn < screenPosition) {
+          document
+            .querySelector(".resume__copy a")
+            .classList.add("resumeBtn__appearEffect");
+        }
+      },
+      []
+    );
+  });
+
   return (
     <div className="resume">
-      <h1>CV</h1>
+      <div className="resume__container">
+        <h1 className="section__header">My Resume</h1>
+        <div className="resume__copy">
+          <a href={resume} target="blank">
+            Download PDF
+          </a>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
+
+export default Resume;

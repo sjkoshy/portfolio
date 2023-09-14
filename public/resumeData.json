@@ -1,0 +1,70 @@
+{
+  "name": {
+    "firstName": "Sherilyn",
+    "lastName": "Koshy"
+  },
+  "logo": "favicon.png",
+  "profilePic": "profile-pic.jpeg",
+  "emailId": "sherilyn.koshy@gmail.com",
+  "resume": "/resume.pdf",
+  "backgrounds": {
+    "home": "back-1.jpg"
+  },
+  "about": {
+    "profession": "Full Stack Software Developer",
+    "description": "Hi! I'm Sherilyn Koshy. \nFull-stack software developer with an insatiable curiosity for fresh challenges. Eager to create meaningful impact through mission-driven solutions. Adept at writing precise technical documentation, responding swiftly to high-severity incidents, and safely deploying code to production. With over 7 years of experience in FinTech, I’ve cultivated a versatile skill set spanning risk management, corporate finance, and operations.",
+    "hobbies": "When I'm not coding, I enjoy sampling New York City's diverse culinary scene, exploring new neighborhoods, and playing the NYT games.",
+    "skillsDescription": "Here's a snapshot of the technologies I've used:",
+    "worksDescription": "(more coming soon)",
+    "getInTouchDescription": "If you are interested in collaborating or just want to chat, feel free to connect through LinkedIn or email!"
+  },
+  "skills": [
+    "javascript",
+    "reactjs",
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "html5",
+    "css3",
+    "postgresql",
+    "python",
+    "django"
+  ],
+  "works": [
+    {
+      "name": "Alpha Marketplace",
+      "description": "Mock e-commerce platform for buying and selling cars online. Built using the MERN stack. Users can create accounts, browse cars, add them to their cart, and list items for sale.",
+      "image": "alpha-marketplace.png",
+      "url": "https://alpha-marketplace.netlify.app/",
+      "git": "https://github.com/nnmcgovern/alpha-marketplace-frontend"
+    },
+    {
+      "name": "Pet Pals",
+      "description": "Mock social media platform for pet adoption. Built using the ReactJS, Django, PostgreSQL, and Python. Users can create profiles, browse cats & dogs available for adoption, add them to their favorites, and comment on posts.",
+      "image": "pet-pals.png",
+      "url": "https://sei-petpals.netlify.app/",
+      "git": "https://github.com/adamdawson21/pet-pals-frontend"
+    },
+    {
+      "name": "Word Scramble",
+      "description": "Simple word scramble game built with vanilla JS, HTML, and CSS.",
+      "image": "word-scramble.png",
+      "url": "https://sjkoshy.github.io/word-scramble/",
+      "git": "https://github.com/sjkoshy/word-scramble"
+    }
+  ],
+  "social": [
+    {
+      "name": "github",
+      "icon": "fa-github",
+      "color": "#333",
+      "url": "https://github.com/sjkoshy"
+    },
+    {
+      "name": "linkedin",
+      "icon": "fa-linkedin-in",
+      "color": "#0077b5",
+      "url": "https://www.linkedin.com/in/sherilynkoshy/"
+    }
+  ]
+}

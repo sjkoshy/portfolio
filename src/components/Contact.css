@@ -1,0 +1,85 @@
+.contact {
+  background-color: rgb(226, 226, 226);
+  min-height: 60vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__description {
+  margin-top: -1rem;
+  text-align: center;
+}
+
+.contact__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 2rem 0;
+  flex: 1;
+}
+
+.fa-envelope, .fa-linkedin {
+  font-size: 3rem;
+  color: black;
+  padding: 1rem;
+}
+
+
+@media (max-width: 900px) {
+  .contact__container {
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .email__container {
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  .contact__form {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__row input,
+  .form__row textarea {
+    width: 15rem;
+  }
+
+  .form__row label {
+    flex: 0.4;
+  }
+
+  .contact__form {
+    margin: 0.5rem 0;
+  }
+
+  .fa-envelope {
+    flex: 0.45;
+  }
+}
+
+@media (max-width: 350px) {
+  .form__row input,
+  .form__row textarea {
+    width: 12rem;
+  }
+
+  .form__row label {
+    flex: 0.5;
+  }
+
+  .fa-envelope {
+    flex: 0.55;
+  }
+
+  .contact__form {
+    margin: 0;
+  }
+}

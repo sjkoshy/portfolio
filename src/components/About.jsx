@@ -1,39 +1,72 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import "./About.css";
 
-export default function About() {
+function About({ profilePic, about }) {
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const screenPosition = window.innerHeight;
+      const profilePhoto = document
+        .querySelector(".about__profilePhoto")
+        .getBoundingClientRect().top;
+
+      if (profilePhoto < screenPosition) {
+        document
+          .querySelector(".about__profilePhoto")
+          .classList.add("about__appearEffect");
+      } else {
+        document
+          .querySelector(".about__profilePhoto")
+          .classList.remove("about__appearEffect");
+      }
+
+      const description = document
+        .querySelector(".about__description")
+        .getBoundingClientRect().top;
+
+      if (description < screenPosition) {
+        document
+          .querySelector(".about__description")
+          .classList.add("about__appearEffect");
+      } else {
+        document
+          .querySelector(".about__description")
+          .classList.remove("about__appearEffect");
+      }
+
+      const hobbies = document
+        .querySelector(".about__hobbies")
+        .getBoundingClientRect().top;
+
+      if (hobbies < screenPosition) {
+        document
+          .querySelector(".about__hobbies")
+          .classList.add("about__appearEffect");
+      } else {
+        document
+          .querySelector(".about__hobbies")
+          .classList.remove("about__appearEffect");
+      }
+    });
+  }, []);
+
   return (
-    <div>
-      <section className="brand-statement">
-        <p>Full-stack software developer with an insatiable curiosity for fresh challenges. Eager to create meaningful impact through mission-driven solutions. Adept at writing precise technical documentation, responding swiftly to high-severity incidents, and safely deploying code to production. With over 7 years of experience in FinTech, I’ve cultivated a versatile skill set spanning risk management, corporate finance, and operations. </p>
-      </section>
-
-      <section className="skills">
-        <h2>Skills</h2>
-
-        <i class="devicon-react-original-wordmark"></i>
-        <i class="devicon-python-plain-wordmark"></i>
-        <i class="devicon-javascript-plain"></i>
-        <i class="devicon-html5-plain-wordmark"></i>
-        <i class="devicon-css3-plain-wordmark"></i>
-        <i class="devicon-nodejs-plain-wordmark"></i>
-        <i class="devicon-express-original-wordmark"></i>
-        <i class="devicon-mongodb-plain-wordmark"></i>
-        <i class="devicon-postgresql-plain-wordmark"></i>
-        <i class="devicon-django-plain-wordmark"></i>
-          
-          
-          
-
-          
-          
-          
-
-          
-          
-          
-      </section>
-    
-      
+    <div className="about">
+      <h1 className="section__header">About Me</h1>
+      <img
+        className="about__profilePhoto"
+        src={`${process.env.PUBLIC_URL}/img/${profilePic}`}
+        alt=""
+      />
+      <div className="about__description">
+        {about?.description &&
+          about.description.split("\n").map((para) => <p>{para}</p>)}
+      </div>
+      <div className="about__hobbies">
+        {about?.hobbies &&
+          about.hobbies.split("\n").map((para) => <p>{para}</p>)}
+      </div>
     </div>
-  )
+  );
 }
+
+export default About;
