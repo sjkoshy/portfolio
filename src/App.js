@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Home from "./Components/Home";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Works from "./Components/Works";
-import Resume from "./Components/Resume";
-import Contact from "./Components/Contact";
+import Home from "./Components/Home.jsx";
+import Footer from "./Components/Footer.jsx";
+import Header from "./Components/Header.jsx";
+import About from "./Components/About.jsx";
+import Skills from "./Components/Skills.jsx";
+import Works from "./Components/Works.jsx";
+import Resume from "./Components/Resume.jsx";
+import Contact from "./Components/Contact.jsx";
 import smoothScroll from "smoothscroll-polyfill";
 
 function App() {
