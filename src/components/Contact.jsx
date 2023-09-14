@@ -1,11 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import "./Contact.css";
-import emailUtility, {
-  getWithExpiry,
-  setWithExpiry,
-} from "../Utility/emailUtility";
-import validate, { validateName } from "../Utility/validationUtility";
-
 function Contact({ nameProp, emailId, about }) {
 
   useEffect(() => {
